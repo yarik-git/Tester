@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тест: Что такое совесть?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Главное меню -->
+  <div id="mainMenu" class="screen active">
+    <div class="menu-container">
+      <h1>Тест: Что такое совесть?</h1>
+      <p>Выберите вариант теста:</p>
+      <button id="startTutorialBtn">Пройти тестовый вариант</button>
+      <button id="startMainBtn">Пройти основной тест</button>
+    </div>
+  </div>
+
+  <!-- Тестовый вариант -->
+  <div id="tutorialTest" class="screen">
+    <div class="menu-container">
+      <h2>Тестовый вариант (без сертификата)</h2>
+      <p>Этот вариант поможет вам ознакомиться с вопросами. Сертификат не выдаётся.</p>
+      <button id="startTutorialTestBtn">Начать тестовый вариант</button>
+      <button id="backToMenuFromTutorial" class="back-btn">Вернуться в меню</button>
+    </div>
+  </div>
+
+  <!-- Основной тест -->
+  <div id="mainTest" class="screen">
+    <div id="questionContainer">
+      <div class="question-counter" id="questionCounter"></div>
+      <h3 id="currentQuestion"></h3>
+      <div id="answersContainer"></div>
+      <button id="nextQuestionBtn">Следующий вопрос</button>
+    </div>
+  </div>
+
+  <!-- Результаты -->
+  <div id="resultsScreen" class="screen">
+    <div class="results-content">
+      <h2>Результаты теста</h2>
+      <p id="scoreDisplay"></p>
+      <p id="messageDisplay"></p>
+      <button id="getCertificateBtn" style="display: none;">Получить сертификат</button>
+      <button id="backToMenuBtn">В главное меню</button>
+    </div>
+  </div>
+
+  <!-- Сертификат -->
+  <div id="certificateScreen" class="screen">
+    <div class="certificate">
+      <h2>Сертификат об успешном прохождении теста</h2>
+      <div class="cert-info">
+        <p><strong>Имя:</strong> <span id="certName">Участник</span></p>
+        <p><strong>Тест:</strong> Что такое совесть?</p>
+        <p><strong>Результат:</strong> <span id="certScore"></span></p>
+        <p><strong>Дата:</strong> <span id="certDate"></span></p>
+      </div>
+      <button id="downloadCertBtn">Скачать PDF</button>
+      <button id="backToResultsBtn">Назад к результатам</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

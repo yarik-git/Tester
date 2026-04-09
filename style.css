@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #663399, #9966CC);
+  min-height: 100vh;
+  color: #333;
+}
+
+.screen {
+  display: none;
+  padding: 20px;
+}
+
+.screen.active {
+  display: block;
+}
+
+.menu-container {
+  max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+.back-btn {
+  background: #7f8c8d;
+}
+
+.back-btn:hover {
+  background: #6c7a7a;
+}
+
+#questionContainer {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+#answersContainer {
+  text-align: left;
+  margin: 20px 0;
+}
+
+#answersContainer label {
+  display: block;
+  padding: 12px;
+  margin: 8px 0;
+  background: #f9f9f9;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  border: 1px solid #e0e0e0;
+}
+
+#answersContainer label:hover {
+  background: #e8f4fd;
+  border-color: #3498db;
+}
+
+#answersContainer input {
+  margin-right: 10px;
+  transform: scale(1.1);
+  vertical-align: middle;
+}
+
+.question-counter {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #663399;
+  font-size: 18px;
+}
+
+.results-content {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.certificate {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  border: 10px solid #ffd700;
+  position: relative;
+}
+
+.certificate h2 {
+  color: #663399;
+  margin-bottom: 30px;
+}
+
+.cert-info p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+#downloadCertBtn {
+  background: #27ae60;
+}
+
+#downloadCertBtn:hover {
+  background: #219951;
+}
+
+#backToResultsBtn, #backToMenuBtn {
+  background: #7f8c8d;
+}
+
+#backToResultsBtn:hover, #backToMenuBtn:hover {
+  background: #6c7a7a;
+}
+
+#scoreDisplay {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #663399;
+}
+
+#messageDisplay {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #663399, #9966CC);
+  min-height: 100vh;
+  color: #333;
+}
+
+.screen {
+  display: none;
+  padding: 20px;
+}
+
+.screen.active {
+  display: block;
+}
+
+.menu-container {
+  max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+#questionContainer {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#answersContainer label {
+  display: block;
+  padding: 12px;
+  margin: 8px 0;
+  background: #f9f9f9;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#answersContainer label:hover {
+  background: #e8f4fd;
+}
+
+.results-content {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.certificate {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.cert-info p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+#downloadCertBtn {
+  background: #27ae60;
+}
+
+#downloadCertBtn:hover {
+  background: #219951;
+}
